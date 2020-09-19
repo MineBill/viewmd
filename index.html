@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="github-markdown.css">
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="markdown-body">
+        <h1>github-markdown-css</h1>
+<blockquote>
+<p>The minimal amount of CSS to replicate the GitHub Markdown style</p>
+</blockquote>
+<p><a href="http://sindresorhus.com/github-markdown-css" rel="nofollow"><img src="https://cloud.githubusercontent.com/assets/170270/5219062/f22a978c-7685-11e4-8316-af25b6c89bc0.png" width="300" style="max-width:100%;"></a></p>
+<h2><a href="https://sindresorhus.com/github-markdown-css" rel="nofollow">Demo</a></h2>
+<h2>Install</h2>
+<p>Download <a href="https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css" rel="nofollow">manually</a>, from <a href="https://cdnjs.com/libraries/github-markdown-css" rel="nofollow">CDNJS</a>, or with npm:</p>
+<pre><code>$ npm install github-markdown-css
+</code></pre>
+<h2>Usage</h2>
+<p>Import the <code>github-markdown.css</code> file and add a <code>markdown-body</code> class to the container of your rendered Markdown and set a width for it. GitHub uses <code>980px</code> width and <code>45px</code> padding, and <code>15px</code> padding for mobile.</p>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">name</span>="<span class="pl-s">viewport</span>" <span class="pl-c1">content</span>="<span class="pl-s">width=device-width, initial-scale=1</span>"<span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">rel</span>="<span class="pl-s">stylesheet</span>" <span class="pl-c1">href</span>="<span class="pl-s">github-markdown.css</span>"<span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+	.<span class="pl-c1">markdown-body</span> {
+		<span class="pl-c1">box-sizing</span>: border-box;
+		<span class="pl-c1">min-width</span>: <span class="pl-c1">200<span class="pl-smi">px</span></span>;
+		<span class="pl-c1">max-width</span>: <span class="pl-c1">980<span class="pl-smi">px</span></span>;
+		<span class="pl-c1">margin</span>: <span class="pl-c1">0</span> auto;
+		<span class="pl-c1">padding</span>: <span class="pl-c1">45<span class="pl-smi">px</span></span>;
+	}
+
+	<span class="pl-k">@media</span> (<span class="pl-c1">max-width</span>: <span class="pl-c1">767<span class="pl-smi">px</span></span>) {
+		.<span class="pl-c1">markdown-body</span> {
+			<span class="pl-c1">padding</span>: <span class="pl-c1">15<span class="pl-smi">px</span></span>;
+		}
+	}
+<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">article</span> <span class="pl-c1">class</span>="<span class="pl-s">markdown-body</span>"<span class="pl-kos">&gt;</span>
+	<span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>Unicorns<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
+	<span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>All the things<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">article</span><span class="pl-kos">&gt;</span></pre></div>
+<p>If you want code syntax highlighted, use GitHub Flavored Markdown rendered from <a href="https://developer.github.com/v3/markdown/">GitHub's <code>/markdown</code> API</a>.</p>
+<h2>How</h2>
+<p>See <a href="https://github.com/sindresorhus/generate-github-markdown-css"><code>generate-github-markdown-css</code></a> for how it's generated and ability to generate your own.</p>
+<h2>Dev</h2>
+<p>Run <code>npm run make</code> to update the CSS.</p>
+    </div>
+</body>
+</html>

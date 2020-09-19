@@ -1,0 +1,22 @@
+{
+  "name": "viewmd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "run": "electron ."
+  },
+  "author": "MineBill",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "10.1.2"
+  },
+  "dependencies": {
+    "@octokit/core": "^3.1.2",
+    "commander": "^6.1.0",
+    "github-markdown-css": "^4.0.0",
+    "highlight.js": "^10.2.0",
+    "liquidjs": "^9.15.0",
+    "tmp": "^0.2.1"
+  }
+}
